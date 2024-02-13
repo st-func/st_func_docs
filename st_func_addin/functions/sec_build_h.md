@@ -20,7 +20,7 @@
 
 STF.secBuildH(propertyType, a, b, t1, t2)
 
-STF.secBuildH関数の諸引きには、次の引数があります。
+STF.secBuildH関数の書式には、次の引数があります。
 
 * **propertyType** 必ず指定します。計算する断面性能を文字列で指定します。
 * **a** 必ず指定します。成 $A$ (mm)を指定します。
