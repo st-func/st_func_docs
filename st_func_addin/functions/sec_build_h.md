@@ -42,15 +42,15 @@ STF.secBuildH関数の書式には、次の引数があります。
 
 ### A：断面積
 
-$$ A_{断面積}=A_{成}\cdot B-(A_{成}-2\cdot t_2)\cdot (B-t_1) $$
+$$ A_{断面積}=B\cdot A_{成}-(B-t_1)\cdot (A_{成}-2\cdot t_2) $$
 
 ### IY：Y軸まわりの断面二次モーメント
 
-$$ IY=\frac{1}{12}\cdot(B\cdot A^3-(B-t_1)\cdot (A-2\cdot t_2)^3) $$
+$$ IY=\frac{1}{12}\cdot\{B\cdot A^3-(B-t_1)\cdot (A-2\cdot t_2)^3\} $$
 
 ### IZ：Z軸まわりの断面二次モーメント
 
-$$ IZ=\frac{1}{12}\cdot(2\cdot t_2\cdot B^3+(A-2\cdot t_2)\cdot t_1^3) $$
+$$ IZ=\frac{1}{12}\cdot\{2\cdot t_2\cdot B^3+(A-2\cdot t_2)\cdot t_1^3\} $$
 
 ### iY、iZ：断面二次半径
 
@@ -60,11 +60,11 @@ $$ iZ=\sqrt{\frac{IZ}{A}} $$
 
 ### ZY：Y軸まわりの断面係数
 
-$$ ZY=\frac{1}{6A}\cdot(B\cdot A^3-(B-t_1)\cdot (A-2\cdot t_2)^3) $$
+$$ ZY=\frac{1}{6A}\cdot\{B\cdot A^3-(B-t_1)\cdot (A-2\cdot t_2)^3\} $$
 
 ### ZZ：Z軸回りの断面係数
 
-$$ ZZ=\frac{1}{6B}\cdot(2\cdot t_2\cdot B^3+(A-2\cdot t_2)\cdot t_1^3) $$
+$$ ZZ=\frac{1}{6B}\cdot\{2\cdot t_2\cdot B^3+(A-2\cdot t_2)\cdot t_1\} $$
 
 ### m：単位質量
 
