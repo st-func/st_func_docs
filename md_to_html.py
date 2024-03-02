@@ -26,7 +26,7 @@ def convert_md_to_html(input_path, output_path):
 
 
 def main():
-    input_folder = "."
+    input_folder = "markdown"
     output_folder = "html"
 
     if not os.path.exists(output_folder):
