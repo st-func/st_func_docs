@@ -1,5 +1,9 @@
 # st_func_addinマニュアル
 
+## インストール方法
+
+* [Excel Online](install_web.md)
+
 ## カスタム関数
 
 ### 断面性能関数
