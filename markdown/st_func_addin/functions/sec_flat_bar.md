@@ -22,7 +22,7 @@
 
 ## 書式
 
-STF.secFlatBar(propertyType, d, t)
+STF.secFlatBar(propertyType, b, t)
 
 STF.secFlatBar関数の書式には、次の引数があります。
 
