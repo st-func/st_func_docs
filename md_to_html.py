@@ -13,9 +13,17 @@ def convert_md_to_html(input_path, output_path):
             extension_configs={"mdx_math": {"enable_dollar_delimiter": True}},
         )
 
+    # タイトルの取得
+    title: str = None
+    for line in md_text.splitlines():
+        if line[0] == "#":
+            title = line.replace("#", "").strip()
+            break
+    if title is None:
+        title = os.path.splitext(os.path.basename(input_path))[0]
+
     with open("template.html", "r", encoding="utf-8") as template_file:
         template_text: str = template_file.read()
-        title: str = os.path.splitext(os.path.basename(input_path))[0]
         html = template_text.replace("{{TITLE}}", title).replace(
             "{{BODY}}", html
         )
